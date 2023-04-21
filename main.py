@@ -11,6 +11,9 @@ def hello_world(request):
     return Response(message)
 
 if __name__ == '__main__':
+        
+    print('Started main.py')
+    
     port = int(os.environ.get("PORT"))
     with Configurator() as config:
         config.add_route('hello', '/')
